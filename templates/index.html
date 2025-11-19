@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeddyBearClinic</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
-    
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">
+            <img src="../static/assets/logo.svg" alt="TeddyBearClinic Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" id="">About</a></li>
+            <li><a href="#" id="">Events</a></li>
+            <li><a href="#" id="">Programs</a></li>
+            <li><a href="#" id="">Get Involved</a></li>
+        </ul>
+        <div class="btns">
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+    <script src="../static/js/main.js"></script>
 </body>
+
 </html>

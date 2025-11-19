@@ -10,6 +10,7 @@ TeddyBearClinic/
 ├── requirements.txt       # Python dependencies
 ├── static/               # Static files (CSS, JS, images)
 │   ├── css/             # CSS stylesheets
+│   ├── assets/          # Images, logos, etc.
 │   ├── js/              # JavaScript files
 │   └── images/          # Image assets
 ├── templates/           # HTML templates
