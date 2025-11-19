@@ -1,1 +1,110 @@
 /* Main stylesheet */
+
+:root {
+	--bg: #ade8f4;
+	--surface: #ffffff;
+	--primary: #03045e;
+	--secondary: #0077b6;
+	--accent: rgb(23, 155, 182);
+	--accent-hover: #48cae4;
+	--text: #03045e;
+	--text-light: #ffffff;
+	--border: #90e0ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Momo Trust Display", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+nav {
+    width: 100%;
+    padding: 1.5rem 5%;
+    min-height: 84px;
+    background: var(--surface);
+    border-bottom: 1px solid #90e0ef33;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0, 180, 216, 0.08);
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    width: 160px;
+    flex: 0 0 160px;
+    display: block;
+}
+
+.logo img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 130px;
+    width: auto;
+    display: block;
+    pointer-events: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--accent);
+}
+
+.btns {
+    display: flex;
+}
+
+.btn {
+    padding: 0.75rem 1.75rem;
+    min-width: 140px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: var(--primary);
+    color: var(--text-light);
+    box-shadow: 0 6px 22px rgba(0, 180, 216, 0.22),
+                0 3px 10px rgba(3, 4, 94, 0.12);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s;
+}
+
+.btn:hover {
+    background: var(--secondary);
+    box-shadow: 0 10px 36px rgba(72, 202, 228, 0.32),
+                0 6px 18px rgba(0, 119, 182, 0.18);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 640px) {
+    .logo { width: 96px; flex: 0 0 96px; }
+    .logo img { height: 48px; }
+    .nav-links { gap: 1rem; }
+    .btn { min-width: 110px; padding: 0.5rem 1rem; font-size: 1rem; }
+}
