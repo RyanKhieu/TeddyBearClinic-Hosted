@@ -1,0 +1,36 @@
+/* Donate Page Specific Styles */
+
+/* Theme variables */
+.page-donate {
+  --theme-primary: #c4a24c;
+  --theme-hover: #d4b86c;
+  --theme-light: #e8d49c;
+  --theme-text: #8a7030;
+  --theme-dark: #6a5020;
+  --theme-bg: #fefaf2;
+  --theme-bg-hero: #fefaf2;
+  --theme-surface: #fcf4e0;
+  --theme-border: #e8d8a8;
+}
+
+/* Hero palette */
+.hero-palette-donate {
+  background: var(--theme-bg-hero, #fefaf2);
+}
+.hero-palette-donate .blob-1,
+.hero-palette-donate .blob-5 {
+  --blob-color: #f0e4b0;
+}
+.hero-palette-donate .blob-2,
+.hero-palette-donate .blob-6 {
+  --blob-color: #e8d49c;
+}
+.hero-palette-donate .blob-3,
+.hero-palette-donate .blob-7 {
+  --blob-color: #dcc888;
+}
+.hero-palette-donate .blob-4,
+.hero-palette-donate .blob-8,
+.hero-palette-donate .blob-9 {
+  --blob-color: #d4b86c;
+}

@@ -1,0 +1,114 @@
+/* Our Story Page Specific Styles */
+
+/* Theme variables */
+.page-story {
+  --theme-primary: #4a8ab8;
+  --theme-hover: #6aa8c8;
+  --theme-light: #7eb8da;
+  --theme-text: #3a6a8a;
+  --theme-dark: #2a5a7a;
+  --theme-bg: #f0f7fc;
+  --theme-bg-hero: #f0f7fc;
+  --theme-surface: #e4f0f8;
+  --theme-border: #b0d0e8;
+}
+
+/* Hero palette */
+.hero-palette-story {
+  background: var(--theme-bg-hero, #f0f7fc);
+}
+.hero-palette-story .blob-1,
+.hero-palette-story .blob-5 {
+  --blob-color: #b5d4e8;
+}
+.hero-palette-story .blob-2,
+.hero-palette-story .blob-6 {
+  --blob-color: #7eb8da;
+}
+.hero-palette-story .blob-3,
+.hero-palette-story .blob-7 {
+  --blob-color: #a8c8e0;
+}
+.hero-palette-story .blob-4,
+.hero-palette-story .blob-8,
+.hero-palette-story .blob-9 {
+  --blob-color: #6aa8c8;
+}
+
+/* Component styles */
+.page-story .contact-info {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-story .contact-text h4 {
+  color: var(--theme-primary);
+}
+.page-story .contact-text p {
+  color: var(--theme-text);
+}
+.page-story .social-links {
+  border-top-color: var(--theme-border);
+}
+.page-story .social-links h4 {
+  color: var(--theme-primary);
+}
+.page-story .social-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-color: var(--theme-primary);
+}
+.page-story .social-icon:hover {
+  background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
+  border-color: var(--theme-text);
+}
+.page-story .contact-form-container {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-story .lead-text {
+  color: var(--theme-text);
+}
+.page-story .pub-logo {
+  color: var(--theme-primary);
+  background: #ffffff;
+}
+.page-story .publication-item p {
+  color: var(--theme-text);
+}
+.page-story .activity-card {
+  background: var(--theme-surface);
+}
+.page-story .activity-image {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-story .activity-card h4 {
+  color: var(--theme-primary);
+}
+.page-story .activity-card p {
+  color: var(--theme-text);
+}
+.page-story .team-info h3 {
+  color: var(--theme-dark);
+}
+.page-story .team-role {
+  color: var(--theme-primary);
+}
+.page-story .team-bio {
+  color: var(--theme-text);
+}
+.page-story .founder-text h3 {
+  color: var(--theme-primary);
+}
+.page-story .founder-text p {
+  color: var(--theme-text);
+}
+.page-story .founder-signature {
+  color: var(--theme-dark);
+}
+
+/* Footer styles */
+.page-story .footer-section h4 {
+  color: #a8c8e0;
+}
+.page-story .footer-section p i {
+  color: var(--theme-light);
+}
