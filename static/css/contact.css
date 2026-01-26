@@ -237,13 +237,3 @@
   border-top-color: rgba(232, 184, 156, 0.2);
 }
 
-/* Force color on ALL Font Awesome icons in contact info */
-.page-contact .contact-info i.fa,
-.page-contact .contact-info i.fa-solid,
-.page-contact .contact-info i.fa-brands,
-.page-contact .contact-info i.fa-location-dot,
-.page-contact .contact-info i.fa-school,
-.page-contact .contact-info i.fa-envelope,
-.page-contact .contact-info i.fa-globe {
-  color: var(--theme-primary) !important;
-}
