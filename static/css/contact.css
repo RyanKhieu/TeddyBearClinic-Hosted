@@ -122,6 +122,9 @@
 }
 .page-contact .social-links {
   border-top-color: var(--theme-border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .page-contact .social-links h4 {
   color: var(--theme-primary);
@@ -130,6 +133,7 @@
   background: #ffffff;
   border-color: var(--theme-primary);
 }
+
 .page-contact .lead-text {
   color: var(--theme-text);
 }
@@ -171,10 +175,45 @@
   color: var(--theme-dark);
 }
 
+/* Form field base styles */
+.page-contact input,
+.page-contact textarea,
+.page-contact select {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  border: 1px solid var(--theme-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+
+/* Contact form text color fix */
+.page-contact .contact-form label {
+  color: var(--theme-dark);
+}
+
+.page-contact .contact-form input,
+.page-contact .contact-form select,
+.page-contact .contact-form textarea {
+  color: var(--theme-text);
+  background-color: #fff;
+}
+
+/* Placeholder text */
+.page-contact .contact-form ::placeholder {
+  color: rgba(199, 73, 115, 0.6);
+}
+
 /* Alt background */
 .page-contact .alt-bg {
   background: var(--theme-surface);
 }
+
+
+/* Icons use primary color */
+.page-contact .contact-icon i {
+  color: var(--theme-primary);
+} 
 
 /* Plain background for Contact page alt-bg sections */
 .page-contact .content-section.alt-bg {
@@ -196,4 +235,15 @@
 }
 .page-contact .footer-bottom {
   border-top-color: rgba(232, 184, 156, 0.2);
+}
+
+/* Force color on ALL Font Awesome icons in contact info */
+.page-contact .contact-info i.fa,
+.page-contact .contact-info i.fa-solid,
+.page-contact .contact-info i.fa-brands,
+.page-contact .contact-info i.fa-location-dot,
+.page-contact .contact-info i.fa-school,
+.page-contact .contact-info i.fa-envelope,
+.page-contact .contact-info i.fa-globe {
+  color: var(--theme-primary) !important;
 }
