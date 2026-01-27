@@ -36,14 +36,14 @@ jobs:
       
       - name: Prepare deployment directory
         run: |
-          mkdir -p _site/templates
-          cp -r templates/* _site/templates/
+          mkdir -p _site
+          cp -r templates/* _site/
           cp -r static _site/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload site with templates as the main content source
+          # Upload site with HTML files at the root
           path: '_site'
       
       - name: Deploy to GitHub Pages
