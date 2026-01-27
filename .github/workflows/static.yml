@@ -39,11 +39,13 @@ jobs:
           mkdir -p _site/templates
           cp -r templates/* _site/templates/
           cp -r static _site/
+          # Create root index.html that redirects to templates/index.html
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=templates/index.html"><title>Redirecting...</title></head><body><p>Redirecting to <a href="templates/index.html">Teddy Bear Clinic</a>...</p></body></html>' > _site/index.html
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload site with templates as the main content source
+          # Upload site with templates in subdirectory and root redirect
           path: '_site'
       
       - name: Deploy to GitHub Pages
