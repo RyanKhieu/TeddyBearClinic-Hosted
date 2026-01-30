@@ -2,15 +2,15 @@
 
 /* Theme variables */
 .page-home {
-  --theme-primary: #4a7c59;
-  --theme-hover: #5c7a5c;
-  --theme-light: #81b08b;
-  --theme-text: #3d5c44;
-  --theme-dark: #2d4a34;
-  --theme-bg: #f8f5e6;
-  --theme-bg-hero: #fdf6e3;
-  --theme-surface: #f2edd8;
-  --theme-border: #d4cba8;
+  --theme-primary: #4a8ab8;
+  --theme-hover: #6aa8c8;
+  --theme-light: #7eb8da;
+  --theme-text: #3a6a8a;
+  --theme-dark: #2a5a7a;
+  --theme-bg: #f0f7fc;
+  --theme-bg-hero: #f0f7fc;
+  --theme-surface: #e4f0f8;
+  --theme-border: #b0d0e8;
 }
 
 /* Hero palette */
