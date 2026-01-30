@@ -1,34 +1,79 @@
 /* Partnerships Page Specific Styles */
 
 /* Theme variables - Pastel Lavender */
+
 .page-partnerships {
-  --theme-primary: #8b6caf;
-  --theme-hover: #a090b8;
-  --theme-light: #b8a4d0;
-  --theme-text: #6a5080;
-  --theme-dark: #5a4070;
-  --theme-bg: #f8f5fc;
-  --theme-bg-hero: #f8f5fc;
-  --theme-surface: #f0eaf8;
-  --theme-border: #ccc0e0;
+  --theme-primary: #d3bbff;
+  /* soft pastel lavender */
+  --theme-hover: #bea4f6;
+  /* slightly deeper lavender for hover */
+  --theme-light: #f3ebff;
+  /* very soft lavender highlight */
+  --theme-text: #4b3a5a;
+  /* muted plum/brown for readability */
+  --theme-dark: #6e4e8c;
+  /* darker accent for headings/buttons */
+  --theme-bg: #f8f5ff;
+  /* light lavender background */
+  --theme-bg-hero: #f8f5ff;
+  /* same for hero section */
+  --theme-surface: #fcf9ff;
+  /* soft surface for cards/panels */
+  --theme-border: #e4dbff;
+  /* subtle lavender border for separation */
 }
+
+
+
+
+/* Hero palette - Lavender Pastels */
+.hero-palette-events .blob-1,
+.hero-palette-events .blob-5 {
+  --blob-color: #e6d9ff;
+  /* soft lavender */
+}
+
+.hero-palette-events .blob-2,
+.hero-palette-events .blob-6 {
+  --blob-color: #d4c0ff;
+  /* slightly deeper lavender */
+}
+
+.hero-palette-events .blob-3,
+.hero-palette-events .blob-7 {
+  --blob-color: #f3ebff;
+  /* very soft lavender highlight */
+}
+
+.hero-palette-events .blob-4,
+.hero-palette-events .blob-8,
+.hero-palette-events .blob-9 {
+  --blob-color: #cbb0ff;
+  /* mid lavender for depth */
+}
+
+
 
 /* Hero palette */
 .hero-palette-partnerships {
-    background: var(--theme-bg-hero, #f8f5fc);
+  background: var(--theme-bg-hero, #f8f5fc);
 }
+
 .hero-palette-partnerships .blob-1,
 .hero-palette-partnerships .blob-5 {
   --blob-color: #d4c4e8;
 }
+
 .hero-palette-partnerships .blob-2,
 .hero-palette-partnerships .blob-6 {
   --blob-color: #c4b0d9;
 }
+
 .hero-palette-partnerships .blob-3,
 .hero-palette-partnerships .blob-7 {
   --blob-color: #b8a0d0;
 }
+
 .hero-palette-partnerships .blob-4,
 .hero-palette-partnerships .blob-8,
 .hero-palette-partnerships .blob-9 {
@@ -38,39 +83,49 @@
 /* Navigation accent colors */
 .page-partnerships nav {
   background: var(--theme-bg-hero);
-  border-bottom-color: rgba(74, 124, 89, 0.2);
-  box-shadow: 0 4px 20px rgba(74, 124, 89, 0.08);
+  border-bottom-color: #a890c4;
+  box-shadow: 0 4px 20px #a890c4;
 }
-.page-partnerships .nav-links li > a {
+
+.page-partnerships .nav-links li>a {
   color: var(--theme-text);
 }
-.page-partnerships .nav-links li > a:hover {
+
+.page-partnerships .nav-links li>a:hover {
   color: var(--theme-primary);
 }
+
 .page-partnerships .dropdown-menu {
   background: var(--theme-bg-hero);
   border-color: var(--theme-primary);
 }
+
 .page-partnerships .dropdown-menu a {
   color: var(--theme-text);
 }
+
 .page-partnerships .dropdown-menu a:hover {
-  background: linear-gradient(90deg, rgba(74, 124, 89, 0.2), rgba(129, 176, 139, 0.3));
-  color: var(--theme-primary);
+  background: rgba(81, 69, 137, 0.2);
+  color: var(--theme-dark);
 }
-.page-partnerships .dropdown > a::after {
+
+.page-partnerships .dropdown>a::after {
   border-top-color: var(--theme-primary);
 }
+
 .page-partnerships .btns .btn {
   background: var(--theme-primary);
   color: #ffffff;
 }
+
 .page-partnerships .btns .btn:hover {
   background: var(--theme-hover);
 }
+
 .page-partnerships .section-title {
   color: var(--theme-primary);
 }
+
 .page-partnerships .section-title::after {
   background: linear-gradient(90deg, #8fbcb5, var(--theme-primary));
 }
@@ -83,67 +138,86 @@
 .page-partnerships .story-text h3 {
   color: var(--theme-hover);
 }
+
 .page-partnerships .story-text p {
   color: var(--theme-text);
 }
+
 .page-partnerships .btn:not(.btn-outline) {
   background: var(--theme-primary);
 }
+
 .page-partnerships .btn:not(.btn-outline):hover {
   background: var(--theme-hover);
 }
+
 .page-partnerships .event-calendar {
   background: var(--theme-primary);
 }
+
 .page-partnerships .event-details .btn {
   background: var(--theme-primary);
 }
+
 .page-partnerships .event-details .btn:hover {
   background: var(--theme-hover);
 }
+
 .page-partnerships .event-date h2 {
   color: var(--theme-primary);
 }
+
 .page-partnerships .event-details h3 {
   color: var(--theme-primary);
 }
+
 .page-partnerships .event-description {
   color: var(--theme-text);
 }
+
 .page-partnerships .event-time,
 .page-partnerships .event-location {
   color: var(--theme-hover);
 }
+
 .page-partnerships .hero .btn:not(.btn-outline) {
   background: var(--theme-primary);
   color: #ffffff;
 }
+
 .page-partnerships .hero .btn:not(.btn-outline):hover {
   background: var(--theme-hover);
   color: #ffffff;
 }
+
 .page-partnerships .hero .btn-outline {
   background: transparent !important;
   color: var(--theme-primary);
   border: 2px solid var(--theme-primary);
 }
+
 .page-partnerships .hero .btn-outline:hover {
   background: rgba(74, 124, 89, 0.15) !important;
   color: var(--theme-text);
   border-color: var(--theme-text);
 }
+
 .page-partnerships .hero-tagline {
   color: var(--theme-hover);
 }
+
 .page-partnerships .hero-stat-number {
   color: var(--theme-primary);
 }
+
 .page-partnerships .hero-stat-label {
   color: var(--theme-hover);
 }
+
 .page-partnerships .hero h1 {
   color: var(--theme-dark);
 }
+
 .page-partnerships .hero-subtitle {
   color: var(--theme-hover);
 }
@@ -153,67 +227,87 @@
   background: #ffffff;
   border-color: var(--theme-primary);
 }
+
 .page-partnerships .contact-text h4 {
   color: var(--theme-primary);
 }
+
 .page-partnerships .contact-text p {
   color: var(--theme-text);
 }
+
 .page-partnerships .social-links {
   border-top-color: var(--theme-border);
 }
+
 .page-partnerships .social-links h4 {
   color: var(--theme-primary);
 }
+
 .page-partnerships .social-icon {
   background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
   border-color: var(--theme-primary);
 }
+
 .page-partnerships .social-icon:hover {
   background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
   border-color: var(--theme-text);
 }
+
 .page-partnerships .contact-form-container {
   background: #ffffff;
   border-color: var(--theme-primary);
 }
+
 .page-home .lead-text {
   color: var(--theme-text);
 }
+
 .page-partnerships .pub-logo {
   color: var(--theme-primary);
   background: #ffffff;
 }
+
 .page-partnerships .publication-item p {
   color: var(--theme-hover);
 }
+
 .page-partnerships .activity-card {
   background: var(--theme-surface);
 }
+
 .page-partnerships .activity-image {
   background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
 }
+
 .page-partnerships .activity-card h4 {
   color: var(--theme-primary);
 }
+
 .page-partnerships .activity-card p {
   color: var(--theme-text);
 }
+
 .page-partnerships .team-info h3 {
   color: var(--theme-dark);
 }
+
 .page-partnerships .team-role {
   color: var(--theme-primary);
 }
+
 .page-partnerships .team-bio {
   color: var(--theme-text);
 }
+
 .page-partnerships .founder-text h3 {
   color: var(--theme-primary);
 }
+
 .page-partnerships .founder-text p {
   color: var(--theme-text);
 }
+
 .page-partnerships .founder-signature {
   color: var(--theme-dark);
 }
@@ -222,18 +316,23 @@
 .page-partnerships .site-footer {
   background: var(--theme-dark);
 }
+
 .page-partnerships .footer-section h4 {
   color: var(--theme-light);
 }
+
 .page-partnerships .footer-section p i {
   color: var(--theme-light);
 }
+
 .page-partnerships .footer-section ul a:hover {
   color: var(--theme-light);
 }
+
 .page-partnerships .footer-bottom {
   border-top-color: rgba(184, 164, 208, 0.2);
 }
+
 /* ===== PARTNERSHIPS PAGE SPECIFIC STYLES ===== */
 
 /* Introduction Section */
