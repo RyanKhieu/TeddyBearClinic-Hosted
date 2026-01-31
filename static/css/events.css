@@ -1,71 +1,104 @@
 /* Events Page Specific Styles */
 
-/* Theme variables */
+/* Past Events Theme - Lavender Pastels */
+/* Past Events Theme - Pastel Teals */
 .page-events {
-  --theme-primary: #e07b39;
-  --theme-hover: #c96a2f;
-  --theme-light: #f4a574;
-  --theme-text: #5a4a3a;
-  --theme-dark: #8b5a2b;
-  --theme-bg: #fef6f0;
-  --theme-bg-hero: #fef6f0;
-  --theme-surface: #fff8f2;
-  --theme-border: #e8d4c4;
+  --theme-primary: #c3f0f3;
+  /* soft pastel teal */
+  --theme-hover: #99e0e4;
+  /* slightly deeper teal for hover states */
+  --theme-light: #e0fafb;
+  /* very light pastel teal for highlights */
+  --theme-text: #3d8682;
+  /* dark teal/greenish for readability */
+  --theme-dark: #1b8680;
+  /* deeper accent for headings/buttons */
+  --theme-bg: #f2fafa;
+  /* soft off-white with teal tint for page background */
+  --theme-bg-hero: #f2fafa;
+  /* same for hero background */
+  --theme-surface: #f9fdfd;
+  /* light pastel surface for cards/panels */
+  --theme-border: #d2f1f2;
+  /* soft pastel teal border for subtle separation */
 }
 
-/* Hero palette */
-.hero-palette-events {
-  background: var(--theme-bg-hero, #fef6f0);
-}
+
+
+/* Hero palette - Pastel Teals */
 .hero-palette-events .blob-1,
 .hero-palette-events .blob-5 {
-  --blob-color: #f4c4a0;
+  --blob-color: #c3f0f3;
+  /* soft pastel teal */
 }
+
 .hero-palette-events .blob-2,
 .hero-palette-events .blob-6 {
-  --blob-color: #e8a878;
+  --blob-color: #99e0e4;
+  /* slightly deeper pastel teal */
 }
+
 .hero-palette-events .blob-3,
 .hero-palette-events .blob-7 {
-  --blob-color: #f0d8c0;
+  --blob-color: #e0fafb;
+  /* very light teal highlight */
 }
+
 .hero-palette-events .blob-4,
 .hero-palette-events .blob-8,
 .hero-palette-events .blob-9 {
-  --blob-color: #e09060;
+  --blob-color: #7ed4d7;
+  /* deeper accent teal */
 }
+
+/* Hero background */
+.hero-palette-events {
+  background: #f2fafa;
+  /* soft off-white with a hint of teal */
+}
+
+
+
 
 /* Navigation styles */
 .page-events nav {
   background: var(--theme-bg-hero);
-  border-bottom-color: rgba(224, 123, 57, 0.2);
-  box-shadow: 0 4px 20px rgba(224, 123, 57, 0.08);
+  border-bottom-color: rgba(49, 127, 139, 0.02);
+  box-shadow: 0 4px 20px rgba(49, 127, 139, 0.08);
 }
-.page-events .nav-links li > a {
+
+.page-events .nav-links li>a {
   color: var(--theme-text);
 }
-.page-events .nav-links li > a:hover {
+
+.nav-links li>a:hover {
   color: var(--theme-primary);
 }
-.page-events .dropdown-menu {
+
+.dropdown-menu {
   background: var(--theme-bg-hero);
   border-color: var(--theme-primary);
 }
-.page-events .dropdown-menu a {
+
+.dropdown-menu a {
   color: var(--theme-text);
 }
-.page-events .dropdown-menu a:hover {
-  background: linear-gradient(90deg, rgba(224, 123, 57, 0.15), rgba(244, 165, 116, 0.25));
+
+.dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(96, 90, 87, 0.15), rgba(119, 115, 113, 0.25));
   color: var(--theme-primary);
 }
-.page-events .dropdown > a::after {
+
+.dropdown>a::after {
   border-top-color: var(--theme-primary);
 }
-.page-events .btns .btn {
+
+.btns .btn {
   background: var(--theme-primary);
   color: #ffffff;
 }
-.page-events .btns .btn:hover {
+
+.btns .btn:hover {
   background: var(--theme-hover);
 }
 
@@ -73,14 +106,16 @@
 .page-events .hero h1 {
   color: var(--theme-dark);
 }
+
 .page-events .hero-subtitle {
   color: var(--theme-text);
 }
 
 /* Section styling */
 .page-events .section-title {
-  color: var(--theme-primary);
+  color: var(--theme-dark);
 }
+
 .page-events .section-title::after {
   background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
 }
@@ -126,7 +161,7 @@
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.9rem;
-  box-shadow: 0 4px 15px rgba(224, 123, 57, 0.4);
+  box-shadow: 0 4px 15px rgba(96, 90, 87, 0.15);
 }
 
 .featured-event-content {
@@ -146,7 +181,7 @@
   padding: 1rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 15px rgba(224, 123, 57, 0.3);
+  box-shadow: 0 4px 15px rgba(96, 90, 87, 0.15);
 }
 
 .event-date-badge .event-month {
@@ -240,7 +275,7 @@
 }
 
 .page-events .btn-outline:hover {
-  background: rgba(224, 123, 57, 0.1);
+  background: rgba(96, 90, 87, 0.15);
   color: var(--theme-dark);
 }
 
@@ -267,7 +302,7 @@
 
 .detail-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(224, 123, 57, 0.15);
+  box-shadow: 0 8px 30px rgba(96, 90, 87, 0.15);
 }
 
 .detail-icon {
@@ -365,7 +400,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-dark) 100%);
+  background: var(--theme-primary) 5%;
 }
 
 .cta-content {
@@ -405,6 +440,7 @@
 .page-events .footer-section h4 {
   color: var(--theme-light);
 }
+
 .page-events .footer-section p i {
   color: var(--theme-light);
 }
@@ -492,15 +528,19 @@
 .page-events .site-footer {
   background: var(--theme-dark);
 }
+
 .page-events .footer-section h4 {
   color: var(--theme-light);
 }
+
 .page-events .footer-section p i {
   color: var(--theme-light);
 }
+
 .page-events .footer-section ul a:hover {
   color: var(--theme-light);
 }
+
 .page-events .footer-bottom {
   border-top-color: rgba(244, 165, 116, 0.2);
 }
