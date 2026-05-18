@@ -541,3 +541,27 @@
 .page-gallery .footer-bottom {
   border-top-color: rgba(196, 168, 216, 0.2);
 }
+/* Photographer Credit */
+.photographer-credit {
+  text-align: center;
+  padding: 2rem 0;
+  background: var(--theme-bg);
+}
+
+.photographer-credit p {
+  font-size: 0.95rem;
+  color: var(--theme-text);
+  margin: 0;
+}
+
+.photographer-credit a {
+  color: var(--theme-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.photographer-credit a:hover {
+  color: var(--theme-hover);
+  text-decoration: underline;
+}
