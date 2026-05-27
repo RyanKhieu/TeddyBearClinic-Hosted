@@ -111,6 +111,7 @@ def youth_programs():
 def partnerships():
     return render_template("partnerships.html", title="Partnerships")
 
+
 # --------------------------------------------------
 # Error Handlers
 # --------------------------------------------------
