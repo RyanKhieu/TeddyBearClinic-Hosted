@@ -1,4 +1,4 @@
-# Workflow to deploy static content from the templates folder to GitHub Pages
+# Workflow to deploy static content to GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
@@ -36,18 +36,16 @@ jobs:
       
       - name: Prepare deployment directory
         run: |
-          mkdir -p _site/templates
-          cp -r templates/* _site/templates/
+          mkdir -p _site
+          cp -r templates/* _site/
           cp -r static _site/
           cp robots.txt _site/
           cp sitemap.xml _site/
-          # Create root index.html that redirects to templates/index.html
-          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=templates/index.html"></html>' > _site/index.html
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload site with templates in subdirectory and root redirect
+          # Upload site with pages hosted at root
           path: '_site'
       
       - name: Deploy to GitHub Pages
