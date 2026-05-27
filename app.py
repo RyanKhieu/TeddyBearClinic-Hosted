@@ -1,6 +1,6 @@
 # Flask application entry point
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import logging
 from datetime import datetime
 
@@ -110,6 +110,16 @@ def youth_programs():
 @app.route("/partnerships")
 def partnerships():
     return render_template("partnerships.html", title="Partnerships")
+
+
+@app.route("/robots.txt")
+def robots_txt():
+    return send_from_directory(app.root_path, "robots.txt")
+
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    return send_from_directory(app.root_path, "sitemap.xml")
 
 # --------------------------------------------------
 # Error Handlers
